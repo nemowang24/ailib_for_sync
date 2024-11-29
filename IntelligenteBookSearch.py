@@ -23,7 +23,6 @@ os.environ["PYTHONPATH"] = r"D:\MyDrive2\pythonprojects\ailib;" + os.environ.get
 book_path = "books"
 # GROQ_API_KEY = os.environ["GROQ_API_KEY"]
 # llm = Groq(api_key=GROQ_API_KEY)
-llm_global = Ollama(model="phi3.5:latest", base_url="http://localhost:11434")
 
 # from sentence_transformers import SentenceTransformer
 # model = SentenceTransformer('BAAI/bge-small-en-v1.5')
@@ -41,7 +40,7 @@ llm_global = Ollama(model="phi3.5:latest", base_url="http://localhost:11434")
 #     return HuggingFaceEmbedding(model_name=model_name)
 
 llm_global = Ollama(model="phi3.5:latest", base_url="http://localhost:11434")
-embed_model_global = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5", cache_folder=r"D:\MyDrive2\pythonprojects\ailib\hugcache\models--BAAI--bge-small-en-v1.5")
+embed_model_global = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5", cache_folder=r"C:\Users\tropi\.cache\huggingface\hub")
 # embed_model_global = check_and_initialize_embeddings("BAAI/bge-small-en-v1.5")
 # if embed_model_global:
 #     Settings.llm = llm_global
